@@ -88,10 +88,19 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: red);
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
   position :fixed;
   top: 0;
   z-index: 10;
+}
+
+@keyframes example {
+  from {background-color: white;}
+  to {background-color: hsl(0, 100%, 50%);}
 }
 
 .logo {
